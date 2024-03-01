@@ -1,0 +1,77 @@
+<html>
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Login -  GSU Attendance</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <! CSS pre define model, button, and many more>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    <! Javascrip for animation and other effect>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> <! For popover, dropdown>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <! For Advance popover, dropdown>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Roboto', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header img{
+            max-width: 50%;
+            height: auto;
+        }
+
+        .header h1{
+            font-size: 24px;
+            font-weight: bold;
+            color: #D70F26;
+
+        }
+        .container{
+            max-width: 400px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(242, 3, 3, 0.44), 0 0 0 1px rgba(242, 3, 3, 0.44), 0 2px 2px rgba(242, 3, 3, 0.44);
+            background-color: white;
+        }
+        .btn-primary {
+            background-color: #D70F26;
+            border-color: #D70F26;
+        }
+        .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+            background-color: #b90c1c;
+            border-color: #b90c1c;
+        }
+        .form-group label {
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://commkit.gsu.edu/files/2019/06/PrimaryLogo3color-768x594.jpg" alt="GSU Logo" style="width: 50%;">
+            <h1 class="text-center">GSU Attendance</h1>
+        </div>
+        <form method="POST">
+            <div class="form-group">
+                <label for="username">User ID</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+            <p class="text-center note-text"> </p>
+            <p class="text-center note-text">Made By Nil ❤️ V 1.0.0</p>
+        </form>
+    </div>
+</body>
+</html>
